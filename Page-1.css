@@ -1,0 +1,268 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 581px;
+}
+
+.u-section-1 .u-text-1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin: 25px 0 0;
+}
+
+.u-section-1 .u-btn-1 {
+  background-image: none;
+}
+
+.u-section-1 .u-image-1 {
+  width: 365px;
+  height: 204px;
+  margin: 0 auto;
+}
+
+.u-section-1 .u-text-2 {
+  font-size: 0.875rem;
+  margin: 3px 0 0;
+}
+
+.u-section-1 .u-btn-2 {
+  border-style: none;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  background-image: none;
+  font-weight: 700;
+  margin: 14px auto 40px;
+  padding: 17px 209px 18px 207px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-image-1 {
+    width: 263px;
+    height: 133px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 790px;
+  }
+
+  .u-section-1 .u-text-1 {
+    font-size: 1.25rem;
+  }
+
+  .u-section-1 .u-btn-1 {
+    padding: 0;
+  }
+
+  .u-section-1 .u-btn-2 {
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 105px;
+    padding-left: 105px;
+  }
+}.u-section-2 .u-sheet-1 {
+  min-height: 400px;
+}
+
+.u-section-2 .u-text-1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.u-section-2 .u-btn-1 {
+  background-image: none;
+}
+
+.u-section-2 .u-image-1 {
+  width: 365px;
+  height: 207px;
+  margin: 0 auto 0 388px;
+}
+
+.u-section-2 .u-text-2 {
+  font-size: 0.875rem;
+  margin: 3px 0 0;
+}
+
+.u-section-2 .u-btn-2 {
+  border-style: none;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  background-image: none;
+  font-weight: 700;
+  margin: 14px auto 20px 298px;
+  padding: 17px 209px 18px 207px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-2 .u-sheet-1 {
+    min-height: 403px;
+  }
+
+  .u-section-2 .u-image-1 {
+    margin-left: auto;
+  }
+
+  .u-section-2 .u-btn-2 {
+    margin-top: 8px;
+    margin-left: auto;
+    margin-bottom: 26px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-2 .u-sheet-1 {
+    min-height: 551px;
+  }
+
+  .u-section-2 .u-image-1 {
+    width: 340px;
+    height: 193px;
+  }
+
+  .u-section-2 .u-btn-2 {
+    margin-right: 0;
+    margin-bottom: 20px;
+    padding-right: 106px;
+    padding-bottom: 19px;
+    padding-left: 105px;
+  }
+}.u-section-3 .u-sheet-1 {
+  min-height: 400px;
+}
+
+.u-section-3 .u-text-1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.u-section-3 .u-btn-1 {
+  background-image: none;
+}
+
+.u-section-3 .u-image-1 {
+  width: 365px;
+  height: 207px;
+  margin: 0 auto 0 388px;
+}
+
+.u-section-3 .u-text-2 {
+  font-size: 0.875rem;
+  margin: 3px 0 0;
+}
+
+.u-section-3 .u-btn-2 {
+  border-style: none;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  background-image: none;
+  font-weight: 700;
+  margin: 14px auto 20px 298px;
+  padding: 17px 209px 18px 207px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-3 .u-sheet-1 {
+    min-height: 425px;
+  }
+
+  .u-section-3 .u-image-1 {
+    margin-left: auto;
+  }
+
+  .u-section-3 .u-btn-2 {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-3 .u-sheet-1 {
+    min-height: 595px;
+  }
+
+  .u-section-3 .u-image-1 {
+    width: 340px;
+    height: 193px;
+  }
+
+  .u-section-3 .u-btn-2 {
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 106px;
+    padding-bottom: 19px;
+    padding-left: 105px;
+  }
+}.u-section-4 .u-sheet-1 {
+  min-height: 400px;
+}
+
+.u-section-4 .u-text-1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.u-section-4 .u-btn-1 {
+  background-image: none;
+}
+
+.u-section-4 .u-image-1 {
+  width: 365px;
+  height: 207px;
+  margin: 0 auto 0 388px;
+}
+
+.u-section-4 .u-text-2 {
+  font-size: 0.875rem;
+  margin: 3px 0 0;
+}
+
+.u-section-4 .u-btn-2 {
+  border-style: none;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  background-image: none;
+  font-weight: 700;
+  margin: 14px auto 20px 298px;
+  padding: 17px 209px 18px 207px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-4 .u-sheet-1 {
+    min-height: 425px;
+  }
+
+  .u-section-4 .u-image-1 {
+    margin-left: auto;
+  }
+
+  .u-section-4 .u-btn-2 {
+    margin-top: 11px;
+    margin-left: auto;
+    margin-bottom: 23px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-4 .u-sheet-1 {
+    min-height: 617px;
+  }
+
+  .u-section-4 .u-image-1 {
+    width: 340px;
+    height: 193px;
+  }
+
+  .u-section-4 .u-btn-2 {
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 106px;
+    padding-bottom: 19px;
+    padding-left: 105px;
+  }
+}
