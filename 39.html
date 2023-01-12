@@ -7,6 +7,7 @@
     Your location: 
     <span id="location"></span>
   </div>
+  <div id="console-log"></div>
   <script>
     function getIP() {
       fetch('https://api.ipify.org?format=json')
@@ -28,7 +29,8 @@
           locationElement.textContent = location;
         }
         else {
-          console.error(data.error);
+          console.log(data);
+          document.getElementById('console-log').innerHTML = data;
         }
       }
              )
