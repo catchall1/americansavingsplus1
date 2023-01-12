@@ -518,7 +518,10 @@
                     No
                   </div></div></div></div></div></div><div data-controller="" data-chain--question--component-question-id-value="6" data-chain--question--component-question-text-value="" data-chain--question--component-chain-id-value="4" data-chain--question--component-servicename-value="" data-chain--question--component-hide-progressbar-value="false" data-chain--question--component-active-value="false" data-chain--component-target="question" data-id="6" data-position="2" class="lander-item relative inline-block align-top whitespace-normal transition ease-in duration-200 h-auto w-screen max-w-full my-1 md:my-5 transform translate-y-4 opacity-0" data-tracking-chain-id="6bd0852a98ca0baeede1fea38f0f7e55"><div class="progressbar-chain-item questionEl bg-white rounded mx-auto mt-6 mb-12 px-px text-center"><div class="chain-header"><h1 class="header-title md:mx-10 my-5 text-lg md:text-2xl font-opensans font-semibold">
               </h1></div><div data-keep-previous="false" class="progressbar-chain-item chain-content questionEl w-full"><div class="question-title max-w-3xl mt-3 mx-auto md:px-3 text-sm md:text-xl font-opensans"><b id="iotzx">
-                  Do you reside in <span id="location"></span>
+                  Do you reside in <div id="location-info">
+    Your location: 
+    <span id="location"></span>
+  </div>
   <script>
     function getIP() {
       fetch('https://api.ipify.org?format=json')
