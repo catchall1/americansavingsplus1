@@ -20,25 +20,18 @@
              );
     }
     function getLocation(ip) {
-      fetch('https://api.ipgeolocation.io/ipgeo?apiKey=22315b8a3ce647eba7e92ee2a45d59bd&ip='+ip)
-        .then(response => response.json())
-        .then(data => {
-        if(data.success){
-          const location = data.city + ', ' + data.region;
-          const locationElement = document.getElementById('location');
-          locationElement.textContent = location;
-        }
-        else {
-          console.log(data);
-          document.getElementById('console-log').innerHTML = JSON.stringify(data);
-        }
-      }
-             )
-        .catch(error => {
-        console.error(error);
-      }
-              );
-    }
+  fetch('https://api.ipgeolocation.io/ipgeo?apiKey=22315b8a3ce647eba7e92ee2a45d59bd&ip='+ip)
+    .then(response => response.json())
+    .then(data => {
+      // Access the city and region values from the data object
+      const location = data.city + ', ' + data.region;
+      const locationElement = document.getElementById('location');
+      locationElement.textContent = location;
+    })
+    .catch(error => {
+      console.error(error);
+    });
+}
     window.onload = function() {
       getIP();
     }
