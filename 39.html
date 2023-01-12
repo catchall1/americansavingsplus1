@@ -19,16 +19,16 @@
              );
     }
     function getLocation(ip) {
-      fetch('http://api.ipstack.com/' + ip + '?access_key=' + process.env.IPSTACK_API_KEY)
+      fetch('https://api.ipgeolocation.io/ipgeo?apiKey=22315b8a3ce647eba7e92ee2a45d59bd&ip='+ip)
         .then(response => response.json())
         .then(data => {
         if(data.success){
-          const location = data.city + ', ' + data.region_name;
+          const location = data.city + ', ' + data.region;
           const locationElement = document.getElementById('location');
           locationElement.textContent = location;
         }
         else {
-          console.error(data.error.info);
+          console.error(data.error);
         }
       }
              )
