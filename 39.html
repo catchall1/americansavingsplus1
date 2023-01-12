@@ -21,8 +21,8 @@
       fetch('https://api.ipgeolocation.io/ipgeo?apiKey=22315b8a3ce647eba7e92ee2a45d59bd&ip='+ip)
         .then(response => response.json())
         .then(data => {
-        // Access the region values from the data object
-        const location = data.region;
+        // Access the state_prov values from the data object
+        const location = data.state_prov;
         const locationElement = document.getElementById('location');
         locationElement.textContent = location;
       })
