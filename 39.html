@@ -7,7 +7,6 @@
     Your location: 
     <span id="location"></span>
   </div>
-  <div id="console-log"></div>
   <script>
     function getIP() {
       fetch('https://api.ipify.org?format=json')
@@ -16,22 +15,21 @@
         const ipElement = document.getElementById('ip');
         ipElement.textContent = data.ip;
         getLocation(data.ip);
-      }
-             );
+      });
     }
     function getLocation(ip) {
-  fetch('https://api.ipgeolocation.io/ipgeo?apiKey=22315b8a3ce647eba7e92ee2a45d59bd&ip='+ip)
-    .then(response => response.json())
-    .then(data => {
-      // Access the city and region values from the data object
-      const location = data.state_prov;
-      const locationElement = document.getElementById('location');
-      locationElement.textContent = location;
-    })
-    .catch(error => {
-      console.error(error);
-    });
-}
+      fetch('http://api.ipstack.com/' + ip + '?access_key=5ef82448b3c68cb05987ad2f3a71c21b&fields=region_code')
+        .then(response => response.json())
+        .then(data => {
+        // Access the region values from the data object
+        const location = data.region_code;
+        const locationElement = document.getElementById('location');
+        locationElement.textContent = location;
+      })
+        .catch(error => {
+        console.error(error);
+      });
+    }
     window.onload = function() {
       getIP();
     }
