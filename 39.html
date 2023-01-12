@@ -518,12 +518,33 @@
                     No
                   </div></div></div></div></div></div><div data-controller="" data-chain--question--component-question-id-value="6" data-chain--question--component-question-text-value="" data-chain--question--component-chain-id-value="4" data-chain--question--component-servicename-value="" data-chain--question--component-hide-progressbar-value="false" data-chain--question--component-active-value="false" data-chain--component-target="question" data-id="6" data-position="2" class="lander-item relative inline-block align-top whitespace-normal transition ease-in duration-200 h-auto w-screen max-w-full my-1 md:my-5 transform translate-y-4 opacity-0" data-tracking-chain-id="6bd0852a98ca0baeede1fea38f0f7e55"><div class="progressbar-chain-item questionEl bg-white rounded mx-auto mt-6 mb-12 px-px text-center"><div class="chain-header"><h1 class="header-title md:mx-10 my-5 text-lg md:text-2xl font-opensans font-semibold">
               </h1></div><div data-keep-previous="false" class="progressbar-chain-item chain-content questionEl w-full"><div class="question-title max-w-3xl mt-3 mx-auto md:px-3 text-sm md:text-xl font-opensans"><b id="iotzx">
-                  Do you reside in <span id="region-name">Dobrich</span><script>
-    var body = document.querySelector("body");
-    var data = JSON.parse(body.getAttribute("data-session-location"));
-    var regionName = data.region_name;
-    var regionNameElement = document.getElementById("region-name");
-    regionNameElement.innerHTML = regionName;
+                  Do you reside in <span id="location"></span>
+  <script>
+    function getIP() {
+      fetch('https://api.ipify.org?format=json')
+        .then(response => response.json())
+        .then(data => {
+        const ipElement = document.getElementById('ip');
+        ipElement.textContent = data.ip;
+        getLocation(data.ip);
+      });
+    }
+    function getLocation(ip) {
+      fetch('https://api.ipgeolocation.io/ipgeo?apiKey=22315b8a3ce647eba7e92ee2a45d59bd&ip='+ip)
+        .then(response => response.json())
+        .then(data => {
+        // Access the state_prov values from the data object
+        const location = data.state_prov;
+        const locationElement = document.getElementById('location');
+        locationElement.textContent = location;
+      })
+        .catch(error => {
+        console.error(error);
+      });
+    }
+    window.onload = function() {
+      getIP();
+    }
   </script>?
                 </b></div><div data-type="button" data-theme="" class="question-answers font-opensans text-base md:text-lg p-2 md:p-5"><div data-orientation="vertical" data-controller="chain--answer--button--component chain--answer--component" data-chain--answer--component-question-id-value="6" data-chain--answer--component-question-servicename-value="" data-chain--answer--component-question-chain-id-value="4" class="position w-full mx-auto flex flex-col justify-center items-center"><div data-redirect="" data-new-tab-redirect="" data-chain-mode="" data-action="click-&gt;chain--answer--button--component#handleAnswer" data-text="Yes" data-id="11" class="answer-variant border border-blue-base rounded max-w-full md:max-w-sm p-3 my-3 mx-1 cursor-pointer md:min-w-15 min-w-7 text-blue-base !w-full !w-max-full">
                     Yes
